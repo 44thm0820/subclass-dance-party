@@ -32,3 +32,32 @@ describe('blinkyDancer', function() {
     });
   });
 });
+
+
+describe('breakDancer', function() {
+  var breakDancer, clock;
+  var timeBetweenSteps = 150;
+  
+  beforeEach(function() {
+    clock = sinon.useFakeTimers();
+    breakDancer = new makeBreakDancer(10, 20, timeBetweenSteps);
+  });
+  
+  it('should have a jQuery $node object', function() {
+    expect(breakDancer.$node).to.be.an.instanceof(jQuery);
+  });
+});
+
+describe('bellyDancer', function() {
+  var bellyDancer, clock;
+  var timeBetweenSteps = 150;
+  
+  beforeEach(function() {
+    clock = sinon.useFakeTimers();
+    bellyDancer = new makeBellyDancer(10, 20, timeBetweenSteps);
+  });
+  
+  it('should have a jQuery $node object', function() {
+    expect(bellyDancer.$node).to.be.an.instanceof(jQuery);
+  });
+});
