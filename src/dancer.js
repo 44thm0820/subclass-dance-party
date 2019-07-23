@@ -2,8 +2,6 @@
 var makeDancer = function(top, left, timeBetweenSteps) {
   this.$node = $('<span class="dancer"></span>');
   this.timeBetweenSteps = timeBetweenSteps;
-  console.log(this);
-  console.log(this.step);
   this.step();
   this.setPosition(top, left);  
 };
@@ -16,7 +14,7 @@ makeDancer.prototype.step = function() {
 makeDancer.prototype.setPosition = function(top, left) {
   var styleSettings = {
     top: top,
-    left: left
+    left: left,
   };
   this.$node.css(styleSettings);
 };
