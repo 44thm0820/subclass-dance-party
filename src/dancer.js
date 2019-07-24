@@ -5,7 +5,7 @@ var makeDancer = function(top, left, timeBetweenSteps) {
   this.step();
   this.setPosition(top, left);  
 };
-makeDancer.prototype.constructor = makeDancer;
+makeDancer.prototype.constructaor = makeDancer;
 
 makeDancer.prototype.step = function() {
   setTimeout(this.step.bind(this), this.timeBetweenSteps);

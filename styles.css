@@ -16,23 +16,35 @@ body, a:link, a:visited, a:active{
 
 .title, .addDancerButton {
   padding:5px 12px;
-  float:right;
+  float: left;
 }
 
 .topbar{
   height:32px;
+  text-align: center;
   background-color: #555;
   margin-bottom: 1%;
 }
 
-.title {
+.button-holder {
+  display: inline-block;
+}
+
+.button-holder .title {
   background-color: #777;
+  float: left;
+  align-self: left;
 }
 
 .belly-dancer {
   border:10px solid green;
   border-radius:10px;
   position: absolute;
+}
+
+img {
+  max-height: 100px;
+  max-width: 100px;
 }
 
 .blinky-dancer {
@@ -42,9 +54,9 @@ body, a:link, a:visited, a:active{
 }
 
 .break-dancer {
-  border:10px solid red;
   border-radius:10px;
   position: absolute;
+
 }
 
 .dancer {

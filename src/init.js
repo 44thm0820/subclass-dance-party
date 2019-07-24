@@ -27,6 +27,18 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+    
+    window.dancers.push(dancer);
+    
+    console.log(window.dancers);
   });
+  
+  /* to line them up code is below */
+  $('.button-holder-line').on('click', function(event) {  
+    for (var i = 0; i < window.dancers.length; i++) {
+      
+    }
+  });
+  
 });
 
